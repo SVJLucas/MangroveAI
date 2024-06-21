@@ -84,7 +84,7 @@ The performance of the selected deep learning models for mangrove segmentation o
 
 
 <p align="center">
-  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/3aae9233-ed07-40c1-bdc3-930bde995f20" alt="MagSet-2 Dataset (Other views)" width="700px"/>
+  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/3aae9233-ed07-40c1-bdc3-930bde995f20" alt="MagSet-2 Dataset (Other views)" width="800px"/>
 </p>
 <div align="center">
 Comparative performance on Sentinel-2 test, using Training Set Loss (left), Test Set F1 Score (center), and Test Set Intersection over Union (IoU) (right). Each line represents a model: U-Net (blue), PAN (orange), MANet (green), BEiT (red), SegFormer (purple), and Swin-UMamba (yellow) trained over 100 epochs. Lower loss values, higher F1 and IoU values indicate better performance. Swin-UMamba consistently shows superior performance over all metrics.
@@ -93,12 +93,13 @@ Comparative performance on Sentinel-2 test, using Training Set Loss (left), Test
 
 
 <p align="center">
-  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/00dd3480-831b-4767-ad74-854e3ca424f8" alt="MagSet-2 Dataset (Other views)" width="1000px"/>
+  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/8865fa08-768d-4b48-ba27-25f06faa4405" alt="MagSet-2 Dataset (Other views)" width="1000px"/>
 </p>
 <div align="center">
 Comparative visual segmentation results of mangrove areas. The first column shows the original satellite images, the second column depicts the ground truth segmentation, and the subsequent columns display the segmentation results from U-Net, PAN, MANet, BEiT, SegFormer, and Swin-UMamba models.
 </div>
 <br>
+
 
 
 ## Usage
