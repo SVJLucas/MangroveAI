@@ -101,17 +101,6 @@ Comparative visual segmentation results of mangrove areas. The first column show
 <br>
 
 
-
-## Usage
-
-### Prerequisites
-- Python 3.8+
-- PyTorch
-- torchvision
-- numpy
-- matplotlib
-- scikit-learn
-
 # License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
