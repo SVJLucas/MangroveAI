@@ -48,15 +48,32 @@ Samples from the MagSet-2 dataset are presented. On the right, the RGB bands are
 <br>
 
 
+
 ## Models
 
 The following deep learning models were evaluated:
-1. **U-Net**: A convolutional neural network with a symmetrical encoder-decoder architecture.
-2. **PAN**: Pyramid Attention Network leveraging pyramid pooling and attention mechanisms.
-3. **MANet**: Multi-scale Attention Network incorporating dense connections.
-4. **BEiT**: Transformer-based model using self-supervised learning for image representation.
-5. **SegFormer**: Transformer-based model with a hierarchical encoder and lightweight decoder.
-6. **Swin-UMamba**: A Mamba-based architecture using the Swin-Transformer for enhanced performance.
+
+### Convolutional-based Architectures 
+- **U-Net**: A convolutional neural network with a symmetrical encoder-decoder architecture.
+- **PAN**: Pyramid Attention Network leveraging pyramid pooling and attention mechanisms.
+- **MANet**: Multi-scale Attention Network incorporating dense connections.
+### Transformer-based Architectures 
+- **BEiT**: Transformer-based model using self-supervised learning for image representation.
+- **SegFormer**: Transformer-based model with a hierarchical encoder and lightweight decoder.
+### Mamba-based Architectures 
+- **Swin-UMamba**: A Mamba-based architecture using the Swin-Transformer for enhanced performance.
+
+## Training Pipeline
+
+<p align="center">
+  <img src="images/papers_pipeline.png" alt="Pipeline" width="800px"/>
+</p>
+<div align="center">
+A flowchart representing the steps of the satellite image processing pipeline for the prediction of mangrove locations. The process begins with the acquisition of Sentinel-2 imagery from the Copernicus dataset, followed by zone definition, annotation assignment, data filtering, data augmentation, and image normalization. These pre-processed images are then fed into a predictive model, the output of which is compared against the Global Mangrove Watch v3.2020 dataset to validate the model's predictions.
+</div>
+<br>
+
+
 
 ## Results
 
