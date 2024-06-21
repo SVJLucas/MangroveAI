@@ -79,7 +79,8 @@ The preprocessing starts with acquiring Sentinel-2 images from the Copernicus da
 
 Building on this, the training phase employs sigmoid activation functions and the AdamW optimizer, with a learning rate that halves after every seven stagnant epochs. Training follows the Binary Cross-Entropy loss function. All models maintain similar computational complexities to allow fair comparisons. These steps are executed using an NVIDIA Tesla V100-SXM2 32 GB GPU, producing segmentation maps where each pixel indicates mangrove likelihood. Hyperparameters used are summarized in the table below.
 
-
+<div align="center">
+  
 | Parameter                              | Value        |
 |----------------------------------------|--------------|
 | Batch Size                             | 32           |
@@ -88,6 +89,7 @@ Building on this, the training phase employs sigmoid activation functions and th
 | Learning Rate for the Mamba Model      | 0.0050        |
 | Number of Epochs                       | 100          |
 
+</div>
 
 
 ## Results
@@ -99,6 +101,7 @@ We assessed the performance of each model using established image segmentation e
 - **F1-score**: Balances precision and recall.
 - **Loss (Binary Cross-Entropy)**: Helps optimize the training process.
 
+<div align="center">
 
 | Method       | # Parameters (M) | IoU (%) | Accuracy (%) | F1-score (%) | Loss  |
 |--------------|-------------------|---------|--------------|--------------|-------|
@@ -108,6 +111,8 @@ We assessed the performance of each model using established image segmentation e
 | BEiT         | 33.59             | 70.78   | 85.66        | 82.87        | 0.48  |
 | SegFormer    | 34.63             | 72.32   | 86.13        | 83.91        | 0.42  |
 | Swin-UMamba  | 32.35             | **72.87** | **86.64**    | **84.27**    | **0.31** |
+
+</div>
 
 
 The performance of the selected deep learning models for mangrove segmentation on Sentinel-2 satellite imagery is presented in the table below. The models are categorized into three architectural groups:
