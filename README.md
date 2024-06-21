@@ -1,7 +1,12 @@
 
 # MangroveAI
 
-MangroveAI is a deep learning-based approach for mangrove monitoring and conservation using satellite imagery. This repository contains the code and data for the paper "A Deep Learning-Based Approach for Mangrove Monitoring". The project aims to enhance mangrove segmentation accuracy by leveraging advanced deep learning models, including convolutional, transformer, and Mamba architectures.
+MangroveAI is a deep learning-based approach for mangrove monitoring and conservation using satellite imagery. This repository contains the code and data for the paper **"A Deep Learning-Based Approach for Mangrove Monitoring"**. The project aims to enhance mangrove segmentation accuracy by leveraging advanced deep learning models, including convolutional, transformer, and Mamba architectures.
+
+> [!CAUTION]
+> Here we release the training codes for the models for peer-review.
+> $$\color{red} \text{However, for the dataset, we are providing only a few samples, due to storage constraints given the size of the dataset.}$$
+> The remaining samples **will be made available to the public (open-source) after peer review**, on platforms appropriate for supporting the dataset size.
 
 ## Overview
 
