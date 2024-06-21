@@ -21,7 +21,7 @@ Mangroves are vital coastal ecosystems that play a crucial role in environmental
 MagSet-2 is an open-source dataset we developed specifically for this work. It integrates mangrove annotations from the _Global Mangrove Watch_ with multispectral satellite images from _Sentinel-2_ for the year 2020, resulting in more than 10,000 paired images and mangrove locations. The dataset encompasses images from various geographic zones, ensuring a diverse representation of mangrove ecosystems worldwide. This extensive dataset aims to facilitate researchers in training their models to utilize _Sentinel-2_ imagery for monitoring mangrove areas of environmental protection for years beyond 2020.
 
 <p align="center">
-  <img src="images/data_locations.png" alt="MagSet-2 Dataset (Other views)" width="600px"/>
+  <img src="images/data_locations.png" alt="Sample Locations on World Map " width="600px"/>
 </p>
 <div align="center">
 Mangrove Position (neon blue) and the different Mangrove Zones (green) Dataset based on the Global Mangrove Watch (GMW) v3.2020. Each Neon Blue Point represents a sample from the dataset.
@@ -89,7 +89,7 @@ The performance of the selected deep learning models for mangrove segmentation o
 
 
 <p align="center">
-  <img src="images/evaluation.png" alt="MagSet-2 Dataset (Other views)" width="800px"/>
+  <img src="images/evaluation.png" alt="Evaluation" width="800px"/>
 </p>
 <div align="center">
 Comparative performance on Sentinel-2 test, using Training Set Loss (left), Test Set F1 Score (center), and Test Set Intersection over Union (IoU) (right). Each line represents a model: U-Net (neon blue), PAN (red), MANet (black), BEiT (green), SegFormer (yellow), and Swin-UMamba (dark blue) trained over 100 epochs. Lower loss values, higher F1 and IoU values indicate better performance. Swin-UMamba consistently shows superior performance over all metrics.
@@ -98,7 +98,7 @@ Comparative performance on Sentinel-2 test, using Training Set Loss (left), Test
 
 
 <p align="center">
-  <img src="images/model_results.png" alt="MagSet-2 Dataset (Other views)" width="1000px"/>
+  <img src="images/model_results.png" alt="Comparative visual segmentation results of mangrove areas" width="1000px"/>
 </p>
 <div align="center">
 Comparative visual segmentation results of mangrove areas. The first column shows the original satellite images, the second column depicts the ground truth segmentation, and the subsequent columns display the segmentation results from U-Net, PAN, MANet, BEiT, SegFormer, and Swin-UMamba models.
