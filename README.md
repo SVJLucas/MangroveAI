@@ -31,7 +31,7 @@ Mangrove Position (neon blue) and the different Mangrove Zones (green) Dataset b
 Our dataset includes various bands from the electromagnetic spectrum, obtained from Sentinel-2 imagery. It features RGB (Red, Green, Blue) bands, the Near-Infrared (NIR) band, Vegetation NIR band, and Short-Wave Infrared (SWIR) band. Additionally, it includes estimated vegetation indices such as NDVI, NDWI, and NDMI, alongside targeted mangrove locations. These diverse spectral bands and indices enhance predictive modeling, enabling precise and detailed mangrove segmentation for effective monitoring and conservation:
 
 <p align="center">
-  <img src="images/magset2_sample.png" alt="MagSet-2 Dataset" width="700px"/>
+  <img src="images/sample_from_magset2.png" alt="MagSet-2 Dataset" width="700px"/>
 </p>
 <div align="center">
 Sentinel-2 Spectral Display and Vegetation Analysis: Starting from the top left with the RGB bands, followed by the NIR band, Vegetation NIR, and SWIR band in sequence. On the bottom row, from left to right, we have the estimated NDVI, NDWI, NDMI indices, and the targeted Mangrove locations for predictive modeling.
