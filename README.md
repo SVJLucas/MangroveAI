@@ -5,7 +5,7 @@ MangroveAI is a deep learning-based approach for mangrove monitoring and conserv
 
 > [!CAUTION]
 > Here we release the training codes for the models for peer-review.
-> $$\color{red} \text{However, for the dataset, we are providing only a few samples, due to storage constraints given the size of the dataset.}$$
+> $$\color{red} \text{For the dataset, we are providing only a few samples, due to storage constraints given the size of the dataset.}$$
 > The remaining samples **will be made available to the public (open-source) after peer review**, on platforms appropriate for supporting the dataset size.
 
 ## Overview
