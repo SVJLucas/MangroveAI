@@ -63,6 +63,8 @@ The following deep learning models were evaluated:
 ### Mamba-based Architectures 
 - **Swin-UMamba**: A Mamba-based architecture using the Swin-Transformer for enhanced performance.
 
+These architectures are selected based on their prominence and proven efficacy in semantic segmentation tasks
+
 ## Dataset Preprocessing & Training Pipeline
 
 <p align="center">
