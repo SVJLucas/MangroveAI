@@ -23,7 +23,7 @@ MagSet-2 is an open-source dataset we developed specifically for this work. It i
   <img src="images/data_locations.png" alt="Sample Locations on World Map " width="600px"/>
 </p>
 <div align="center">
-Mangrove Position (neon blue) and the different Mangrove Zones (green) Dataset based on the Global Mangrove Watch (GMW) v3.2020. Each Neon Blue Point represents a position of a sample from the dataset.
+Mangrove Position (neon blue) and the different Mangrove Zones (green) Dataset based on the Global Mangrove Watch (GMW) v3.2020. Each Neon Blue Point represents a position of a sample from the MagSet-2 dataset.
 </div>
 <br>
 
