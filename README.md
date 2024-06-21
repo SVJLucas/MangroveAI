@@ -83,9 +83,9 @@ Building on this, the training phase employs sigmoid activation functions and th
 | Parameter                              | Value        |
 |----------------------------------------|--------------|
 | Batch Size                             | 32           |
-| Learning Rate for Convolutional Models | 0.00011      |
-| Learning Rate for Transformer Models   | 0.005        |
-| Learning Rate for the Mamba Model      | 0.005        |
+| Learning Rate for Convolutional Models | 0.0001      |
+| Learning Rate for Transformer Models   | 0.0050        |
+| Learning Rate for the Mamba Model      | 0.0050        |
 | Number of Epochs                       | 100          |
 
 
