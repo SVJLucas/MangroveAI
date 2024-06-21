@@ -56,7 +56,13 @@ The following deep learning models were evaluated:
 
 ## Results
 
-The table below summarizes the performance of the models on the MagSet-2 dataset:
+We assessed the performance of each model using established image segmentation evaluation metrics, complemented by a qualitative analysis of the results. The key metrics included:
+
+- **Intersection over Union (IoU)**: Measures the overlap between the predicted masks and the actual ground truth, crucial for evaluating segmentation precision.
+- **Accuracy**: Gauges the proportion of correctly classified samples.
+- **F1-score**: Balances precision and recall.
+- **Loss (Binary Cross-Entropy)**: Helps optimize the training process.
+
 
 | Method       | # Parameters (M) | IoU (%) | Accuracy (%) | F1-score (%) | Loss  |
 |--------------|-------------------|---------|--------------|--------------|-------|
@@ -65,9 +71,35 @@ The table below summarizes the performance of the models on the MagSet-2 dataset
 | MANet        | 33.38             | 71.75   | 85.80        | 83.51        | 0.34  |
 | BEiT         | 33.59             | 70.78   | 85.66        | 82.87        | 0.48  |
 | SegFormer    | 34.63             | 72.32   | 86.13        | 83.91        | 0.42  |
-| Swin-UMamba  | 32.35             | 72.87   | 86.64        | 84.27        | 0.31  |
+| Swin-UMamba  | 32.35             | **72.87** | **86.64**    | **84.27**    | **0.31** |
 
-Swin-UMamba demonstrated the best overall performance across all metrics, highlighting its effectiveness in mangrove segmentation tasks.
+
+The performance of the selected deep learning models for mangrove segmentation on Sentinel-2 satellite imagery is presented in the table below. The models are categorized into three architectural groups:
+
+- **Convolutional models**: U-Net, PAN, and MANet. U-Net had the lowest number of parameters (32.54 million) and the lowest IoU score (61.76%). MANet achieved the lowest test loss (0.34) among the convolutional models, while PAN had a middle-ground performance.
+- **Transformer models**: BEiT and SegFormer. These showed improved performance compared to convolutional models, with SegFormer achieving the highest IoU score (72.32%) within this group.
+- **Mamba model**: Swin-UMamba outperformed all other models across all metrics, achieving the highest IoU (72.87%), accuracy (86.64%), F1-score (84.27%), and the lowest loss (0.31).
+
+
+
+
+<p align="center">
+  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/3aae9233-ed07-40c1-bdc3-930bde995f20" alt="MagSet-2 Dataset (Other views)" width="700px"/>
+</p>
+<div align="center">
+Comparative performance on Sentinel-2 test, using Training Set Loss (left), Test Set F1 Score (center), and Test Set Intersection over Union (IoU) (right). Each line represents a model: U-Net (blue), PAN (orange), MANet (green), BEiT (red), SegFormer (purple), and Swin-UMamba (yellow) trained over 100 epochs. Lower loss values, higher F1 and IoU values indicate better performance. Swin-UMamba consistently shows superior performance over all metrics.
+</div>
+<br>
+
+
+<p align="center">
+  <img src="https://github.com/SVJLucas/MangroveAI/assets/60625769/00dd3480-831b-4767-ad74-854e3ca424f8" alt="MagSet-2 Dataset (Other views)" width="1000px"/>
+</p>
+<div align="center">
+Comparative visual segmentation results of mangrove areas. The first column shows the original satellite images, the second column depicts the ground truth segmentation, and the subsequent columns display the segmentation results from U-Net, PAN, MANet, BEiT, SegFormer, and Swin-UMamba models.
+</div>
+<br>
+
 
 ## Usage
 
