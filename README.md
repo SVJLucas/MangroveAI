@@ -1,16 +1,16 @@
 
 # MangroveAI
 
-MangroveAI is a deep learning-based approach for mangrove monitoring and conservation using satellite imagery. This repository contains the code and data for the paper **"A Deep Learning-Based Approach for Mangrove Monitoring"**. The project aims to enhance mangrove segmentation accuracy by leveraging advanced deep learning models, including convolutional, transformer, and Mamba architectures.
+MangroveAI is a deep learning-based approach for mangrove monitoring and conservation using satellite imagery. This repository contains the code and data for the paper **"A Deep Learning-Based Approach for Mangrove Monitoring"**. This work aims to enhance mangrove segmentation accuracy by leveraging advanced deep learning models, including convolutional, transformer, and Mamba architectures.
 
 > [!CAUTION]
 > Here we release the training codes for the models for peer-review.
-> $$\color{red} \text{For the dataset, we are providing only a few samples, due to storage constraints given the size of the dataset.}$$
+> $$\color{red} \text{For the dataset, we are providing only a few samples due to storage constraints related to its size.}$$
 > The remaining samples **will be made available to the public (open-source) after peer review**, on platforms appropriate for supporting the dataset size.
 
 ## Overview
 
-Mangroves are vital coastal ecosystems that play a crucial role in environmental health, economic stability, and climate resilience. This project focuses on developing and evaluating state-of-the-art deep learning models for accurate mangrove segmentation from multispectral satellite imagery. The key contributions of this work include:
+Mangroves are vital coastal ecosystems that play a crucial role in environmental health, economic stability, and climate resilience. This work focuses on developing and evaluating state-of-the-art deep learning models for accurate mangrove segmentation from multispectral satellite imagery. The key contributions of this work include:
 - Introducing a novel open-source dataset, MagSet-2, incorporating mangrove annotations from the Global Mangrove Watch and satellite images from Sentinel-2.
 - Benchmarking six deep learning architectures: U-Net, PAN, MANet, BEiT, SegFormer, and Swin-UMamba.
 - Demonstrating the superior performance of the Swin-UMamba model in mangrove segmentation tasks.
@@ -107,5 +107,5 @@ Comparative visual segmentation results of mangrove areas. The first column show
 
 
 # License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This work is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
