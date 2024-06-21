@@ -63,15 +63,28 @@ The following deep learning models were evaluated:
 ### Mamba-based Architectures 
 - **Swin-UMamba**: A Mamba-based architecture using the Swin-Transformer for enhanced performance.
 
-## Training Pipeline
+## Dataset Preprocessing & Training Pipeline
 
 <p align="center">
   <img src="images/papers_pipeline.png" alt="Pipeline" width="800px"/>
 </p>
 <div align="center">
-A flowchart representing the steps of the satellite image processing pipeline for the prediction of mangrove locations. The process begins with the acquisition of Sentinel-2 imagery from the Copernicus dataset, followed by zone definition, annotation assignment, data filtering, data augmentation, and image normalization. These pre-processed images are then fed into a predictive model, the output of which is compared against the Global Mangrove Watch v3.2020 dataset to validate the model's predictions.
+A flowchart representing the steps of the satellite image processing pipeline for the prediction of mangrove locations.
 </div>
 <br>
+
+The preprocessing starts with acquiring Sentinel-2 images from the Copernicus dataset, followed by zone definition, annotation, data filtering, augmentation, and normalization. This thorough preparation optimizes the images for the predictive models, enhancing both accuracy and efficiency.
+
+Building on this, the training phase employs sigmoid activation functions and the AdamW optimizer, with a learning rate that halves after every seven stagnant epochs. Training follows the Binary Cross-Entropy loss function. All models maintain similar computational complexities to allow fair comparisons. These steps are executed using an NVIDIA Tesla V100-SXM2 32 GB GPU, producing segmentation maps where each pixel indicates mangrove likelihood. Hyperparameters used are summarized in the table below.
+
+
+| Parameter                              | Value        |
+|----------------------------------------|--------------|
+| Batch Size                             | 32           |
+| Learning Rate for Convolutional Models | 0.00011      |
+| Learning Rate for Transformer Models   | 0.005        |
+| Learning Rate for the Mamba Model      | 0.005        |
+| Number of Epochs                       | 100          |
 
 
 
