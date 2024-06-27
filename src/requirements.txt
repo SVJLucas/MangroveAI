@@ -1,0 +1,8 @@
+rasterio
+torch
+pillow
+scikit-image
+pytorch-lightning
+segmentation-models-pytorch
+albumentations
+tensorboard
